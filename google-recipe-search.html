@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Recipes</title>
+</head>
+<body>
+    <h1>Search for Recipes</h1>
+    
+    <h2>Google Recipe Search</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q"
+               pattern="[A-Za-zА-Яа-яЁё\s]+" minlength="3" required>
+        <br>
+        <label><input type="radio" name="source" value="Main Course"> Основное блюдо</label>
+        <label><input type="radio" name="source" value="Dessert"> Десерт</label>
+        <br>
+        <button type="submit">Поиск в Google</button>
+    </form>
+
+    <h2>YouTube Recipe Search</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query"
+               pattern="[A-Za-zА-Яа-яЁё\s]+" minlength="3" required>
+        <br>
+        <label><input type="radio" name="source" value="Main Course"> Основное блюдо</label>
+        <label><input type="radio" name="source" value="Dessert"> Десерт</label>
+        <br>
+        <button type="submit">Поиск на YouTube</button>
+    </form>
+</body>
+</html>
