@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form | IT Courses</title>
+    <style>
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        td:first-child {
+            text-align: right;
+            font-weight: bold;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="thankyou.html">
+
+        <h1 style="text-align: center;">Apply for Training</h1><hr/>
+        <fieldset>
+            <legend>User Data</legend>
+            <table>
+                <tr>
+                    <td>Your name:</td>
+                    <td><input type="text" name="name" required/></td>
+                </tr>
+                <tr>
+                    <td>Your email:</td>
+                    <td><input type="email" name="email" required/></td>
+                </tr>
+                <tr>
+                    <td>Your phone number:</td>
+                    <td><input type="tel" name="phone" required/></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Data</legend>
+            <table>
+                <tr>
+                    <td>Choose course:</td>
+                    <td>
+                        <select>
+                            <option>HTML Basic Training</option>
+                            <option>CSS Basic Training</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Choose Hours:</td>
+                    <td>
+                        <select>
+                            <optgroup label="Утро">
+                                <option>09:00</option>
+                                <option>10:00</option>
+                            </optgroup>
+                            <optgroup label="Вечер">
+                                <option>19:00</option>
+                                <option>20:00</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <hr/>
+        <table>
+            <tr>
+                <td style="text-align: right;">
+                    <input type="checkbox" required>
+                </td>
+                <td>I agree with all the <a href="https://htmlacademy.ru/docs/privacy" target="_blank">usage policy</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">APPLY</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+</html>
