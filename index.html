@@ -2,56 +2,163 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Image Slides</title>
-    <style>
-        body {
-            background-color: #334;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .main-image {
-            width: 90%; 
-            max-width: 800px;
-            margin-bottom: 20px;
-        }
-        .thumbnail {
-            width: 100px;
-            margin: 5px;
-            cursor: pointer;
-        
-        }
-        .thumbnail-container {
-            display: flex; 
-            justify-content: center;
-            gap: 10px;
-        }
-    </style>
+    <title>2024 Tours for You!</title>
 </head>
-<body>
-    <div id="slide-1">
-        <img class="main-image" src="https://fastly.picsum.photos/id/950/500/300.jpg?hmac=mbou0gcyYUx1ojYu5jIlu71_6y9AjCGhO4LxgPzhM8o" alt="Slide 1">
-        <div class="thumbnail-container">
-            <a href="#slide-1"><img class="thumbnail" src="https://fastly.picsum.photos/id/950/200/120.jpg?hmac=mbou0gcyYUx1ojYu5jIlu71_6y9AjCGhO4LxgPzhM8o" alt="1"></a>
-            <a href="#slide-2"><img class="thumbnail" src="https://fastly.picsum.photos/id/736/200/120.jpg?hmac=xKZxaPRiqjwPa4Fde8Lgl8WM-pyM5_EPDpvhHYAgaQM" alt="2"></a>
-            <a href="#slide-3"><img class="thumbnail" src="https://fastly.picsum.photos/id/5/200/120.jpg?hmac=zcwrwhRvLTAVlHbXYG8Sa-9D0eCfzP4edn71kMYXLLQ" alt="3"></a>
-        </div>
-    </div>
-    <div id="slide-2">
-        <img class="main-image" src="https://fastly.picsum.photos/id/736/500/300.jpg?hmac=xKZxaPRiqjwPa4Fde8Lgl8WM-pyM5_EPDpvhHYAgaQM" alt="Slide 2">
-        <div class="thumbnail-container">
-            <a href="#slide-1"><img class="thumbnail" src="https://fastly.picsum.photos/id/950/200/120.jpg?hmac=mbou0gcyYUx1ojYu5jIlu71_6y9AjCGhO4LxgPzhM8o" alt="1"></a>
-            <a href="#slide-2"><img class="thumbnail" src="https://fastly.picsum.photos/id/736/200/120.jpg?hmac=xKZxaPRiqjwPa4Fde8Lgl8WM-pyM5_EPDpvhHYAgaQM" alt="2"></a>
-            <a href="#slide-3"><img class="thumbnail" src="https://fastly.picsum.photos/id/5/200/120.jpg?hmac=zcwrwhRvLTAVlHbXYG8Sa-9D0eCfzP4edn71kMYXLLQ" alt="3"></a>
-        </div>
-    </div>
-    <div id="slide-3">
-        <img class="main-image" src="https://fastly.picsum.photos/id/5/500/300.jpg?hmac=zcwrwhRvLTAVlHbXYG8Sa-9D0eCfzP4edn71kMYXLLQ" alt="Slide 3">
-        <div class="thumbnail-container">
-            <a href="#slide-1"><img class="thumbnail" src="https://fastly.picsum.photos/id/950/200/120.jpg?hmac=mbou0gcyYUx1ojYu5jIlu71_6y9AjCGhO4LxgPzhM8o" alt="1"></a>
-            <a href="#slide-2"><img class="thumbnail" src="https://fastly.picsum.photos/id/736/200/120.jpg?hmac=xKZxaPRiqjwPa4Fde8Lgl8WM-pyM5_EPDpvhHYAgaQM" alt="2"></a>
-            <a href="#slide-3"><img class="thumbnail" src="https://fastly.picsum.photos/id/5/200/120.jpg?hmac=zcwrwhRvLTAVlHbXYG8Sa-9D0eCfzP4edn71kMYXLLQ" alt="3"></a>
-        </div>
-    </div>
+<body bgcolor="CadetBlue">
+    <table align="center" cellpadding="10" bgcolor="AntiqueWhite">
+        <tr>
+            <td colspan="2">
+                <h1>2024 Tours for You!</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="320">
+                <h2>Awesome Desert Tour</h2>
+                <img src="https://static.toiimg.com/thumb/width-600,height-400,msid-112967493.cms">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid distinctio dolore corrupti quis architecto, accusantium doloremque blanditiis. Enim, quisquam nam eligendi rem facere fuga. Ut suscipit sequi commodi et!</p>
+            </td>
+            <td>
+                <form action="step-2.html" method="POST">
+                    <fieldset>
+                        <legend>Tickets</legend>
+                        <br/><br/>
+                        <label>Available: 10 / how many do you want to buy 
+                            <br/><input type="number" name="tickets_amount_desert" min="1" max="10" value="1"/>
+                        </label>
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                        <legend>Period</legend>
+                        <br/><br/>
+                        <label>
+                           Select departure date
+                           <br/><input type="date" name="departure_date_desert">
+                        </label>
+                        <br/> <br/>
+                        <label>
+                           Select arrival date
+                           <br/><input type="date" name="arrival_date_desert">
+                        </label>
+                    </fieldset>
+                    <hr/>
+                    <p align="right">
+                        <button type="submit">Let's Go</button>
+                    </p>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="320">
+                <h2>North Island Ocean</h2>
+                <img src="https://st3.depositphotos.com/9643694/12832/i/450/depositphotos_128329046-stock-photo-lighthouse-at-the-north-sea.jpg">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum animi a iste sed corrupti facere repellendus possimus eos ratione dolor tenetur necessitatibus reiciendis nemo, sapiente earum suscipit, commodi at!</p>
+            </td>
+            <td>
+                <form action="step-2.html" method="POST">
+                    <fieldset>
+                        <legend>Tickets</legend>
+                        <br/><br/>
+                        <label>Available: 10 / how many do you want to buy 
+                            <br/><input type="number" name="tickets_amount_ocean" min="1" max="10" value="1"/>
+                        </label>
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                        <legend>Period</legend>
+                        <br/><br/>
+                        <label>
+                           Select departure date
+                           <br/><input type="date" name="departure_date_ocean">
+                        </label>
+                        <br/> <br/>
+                        <label>
+                           Select arrival date
+                           <br/><input type="date" name="arrival_date_ocean">
+                        </label>
+                    </fieldset>
+                    <hr/>
+                    <p align="right">
+                        <button type="submit">Let's Go</button>
+                    </p>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="320">
+                <h2>Vinland River</h2>
+                <img src="https://s1.1zoom.me/prev/365/364683.jpg">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati cum animi a iste sed corrupti facere repellendus possimus eos ratione dolor tenetur necessitatibus reiciendis nemo, sapiente earum suscipit, commodi at!</p>
+            </td>
+            <td>
+                <form action="step-2.html" method="POST">
+                    <fieldset>
+                        <legend>Tickets</legend>
+                        <br/><br/>
+                        <label>Available: 10 / how many do you want to buy 
+                            <br/><input type="number" name="tickets_amount_river" min="1" max="10" value="1"/>
+                        </label>
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                        <legend>Period</legend>
+                        <br/><br/>
+                        <label>
+                           Select departure date
+                           <br/><input type="date" name="departure_date_river">
+                        </label>
+                        <br/> <br/>
+                        <label>
+                           Select arrival date
+                           <br/><input type="date" name="arrival_date_river">
+                        </label>
+                    </fieldset>
+                    <hr/>
+                    <p align="right">
+                        <button type="submit">Let's Go</button>
+                    </p>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="320">
+                <h2>Beautiful Mountains</h2>
+                <img src="https://s1.1zoom.me/prev/446/445256.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut vel eveniet libero doloremque ipsum? Accusamus inventore eaque explicabo minima corrupti delectus accusantium exercitationem, nisi magni! Voluptatum voluptates quidem maiores, consectetur eaque iure.</p>
+            </td>
+            <td>
+                <form action="step-2.html" method="POST">
+                    <fieldset>
+                        <legend>Tickets</legend>
+                        <br/><br/>
+                        <label>Available: 10 / how many do you want to buy 
+                            <br/><input type="number" name="tickets_amount_mountains" min="1" max="10" value="1"/>
+                        </label>
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                        <legend>Period</legend>
+                        <br/><br/>
+                        <label>
+                           Select departure date
+                           <br/><input type="date" name="departure_date_mountains">
+                        </label>
+                        <br/> <br/>
+                        <label>
+                           Select arrival date
+                           <br/><input type="date" name="arrival_date_mountains">
+                        </label>
+                    </fieldset>
+                    <hr/>
+                    <p align="right">
+                        <button type="submit">Let's Go</button>
+                    </p>
+                </form>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

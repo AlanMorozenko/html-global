@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2024 Tours for You!</title>
+</head>
+<body bgcolor="CadetBlue">
+    <table align="center" cellpadding="10" bgcolor="AntiqueWhite">
+        <tr>
+            <td width="640">
+                <h1>Awesome Desert Tour</h1>
+                <img src="https://static.toiimg.com/thumb/width-600,height-400,msid-112967493.cms">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid distinctio dolore corrupti quis architecto, accusantium doloremque blanditiis. Enim, quisquam nam eligendi rem facere fuga. Ut suscipit sequi commodi et!</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="640">
+                <form action="step-last.html" method="POST">
+                    <fieldset>
+                        <legend>Personal Data</legend>
+                        <label>
+                            Your full name
+                            <input 
+                            type="text"
+                            size="60"
+                            name="full_name"
+                            />
+                        </label>
+
+                        <br><br>
+
+                        <label>
+                            Phone number
+                            <select name="phone_code">
+                                <option value="+373">+373</option>
+                                <option value="+7">+7</option>
+                                <option value="+40">+40</option>
+                                <option value="+1">+1</option>
+                            </select>
+                            <input 
+                            type="text"
+                            name="phone_number"
+                            size="20"
+                            placeholder="Enter the rest of your number"
+                            />
+                        </label>
+
+                        <br><br>
+
+                        <label>
+                            Address
+                            <br>
+                            Country:
+                            <select name="country">
+                                <option value="Moldova">Moldova</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Romania">Romania</option>
+                                <option value="USA">USA</option>
+                            </select>
+                        </label>
+
+                        <br><br>
+
+                        <label>
+                            City:
+                            <select name="city">
+                                <option value="Chisinau">Chisinau</option>
+                                <option value="Moscow">Moscow</option>
+                                <option value="Bucharest">Bucharest</option>
+                                <option value="New York">New York</option>
+                            </select>
+                            <br><br>
+                            Street Address:
+                            <input 
+                            type="text"
+                            name="street_address"
+                            size="60"
+                            placeholder="Enter your street address"
+                            />
+                        </label>
+                    </fieldset>
+
+                    <br/><br/>
+
+                    <fieldset>
+                        <legend>Transportation</legend>
+                        <label>
+                            Choose type:
+                            <input type="radio" name="transportation" value="Bus"/> Bus
+                            <input type="radio" name="transportation" value="Car"/> Car
+                            <input type="radio" name="transportation" value="Train"/> Train
+                            <input type="radio" name="transportation" value="Ship"/> Ship
+                            <input type="radio" name="transportation" value="Plane"/> Plane
+                        </label>
+                    </fieldset>
+
+                    <hr/>
+                    <table width="100%">
+                        <tr>
+                            <td align="right">
+                                <button type="submit">Continue</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
